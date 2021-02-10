@@ -1,0 +1,24 @@
+﻿<metro:Flyout x:Class="GreatDungeon.Views.SettingsView"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+              xmlns:local="clr-namespace:GreatDungeon.Views"
+              xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
+              xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+              xmlns:viewModels="clr-namespace:GreatDungeon.ViewModel"
+              xmlns:lex="http://wpflocalizeextension.codeplex.com"
+              lex:LocalizeDictionary.DesignCulture="en-US"        
+              lex:ResxLocalizationProvider.DefaultAssembly="GryftecEye"
+              lex:ResxLocalizationProvider.DefaultDictionary="Resources"
+              d:DataContext="{d:DesignInstance viewModels:SettingsFlyoutViewModel}"
+              IsOpen="{Binding IsOpen}"
+              mc:Ignorable="d" 
+              Header="{lex:Loc Settings}"
+              Width="300"
+              Theme="Adapt"
+              Position="Right">
+    <Grid>
+            
+    </Grid>
+</metro:Flyout>

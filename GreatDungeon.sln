@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreatDungeon", "GreatDungeon\GreatDungeon.csproj", "{6248E422-AC9A-4548-BDF5-47F220A871BE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9ED65A74-B1FF-45FE-A533-E44AA9620170} = {9ED65A74-B1FF-45FE-A533-E44AA9620170}
+		{79591387-ED96-4C50-AC4B-5576A8F438FC} = {79591387-ED96-4C50-AC4B-5576A8F438FC}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFBaseClassesLibrary", "BasicClassLibrary\WPFBaseClassesLibrary.csproj", "{79591387-ED96-4C50-AC4B-5576A8F438FC}"
 EndProject

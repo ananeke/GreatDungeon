@@ -8,7 +8,7 @@
         lex:LocalizeDictionary.DesignCulture="en-US"        
         lex:ResxLocalizationProvider.DefaultAssembly="GreatDungeon"
         lex:ResxLocalizationProvider.DefaultDictionary="Resources"
-        xmlns:local="clr-namespace:GreatDungeon"
+        xmlns:local="clr-namespace:GreatDungeon.Views"
         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
         mc:Ignorable="d"
         Title="Great Dungeon" Height="450" Width="800">
@@ -24,7 +24,19 @@
     <!--Setting-->
     <metro:MetroWindow.Flyouts>
         <metro:FlyoutsControl>
-
+            <local:SettingsView DataContext="{Binding SettingsFlyoutViewModel}"/>
         </metro:FlyoutsControl>
     </metro:MetroWindow.Flyouts>
+    <metro:MetroWindow.RightWindowCommands>
+        <metro:WindowCommands ShowLastSeparator="True">
+            <StackPanel Orientation="Horizontal">
+                <Button>
+                    <StackPanel Orientation="Horizontal">
+                        <iconPacks:PackIconModern Kind="Settings"/>
+                        <TextBlock Text="{lex:Loc Settings}" Margin="4 0 0 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>                
+            </StackPanel>
+        </metro:WindowCommands>
+    </metro:MetroWindow.RightWindowCommands>
 </metro:MetroWindow>
