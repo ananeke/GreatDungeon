@@ -19,6 +19,14 @@
               Theme="Adapt"
               Position="Right">
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <local:LanguageView DataContext="{Binding LanguageViewModel}"
+                            Grid.Row="0"
+                            BorderThickness="5"
+                            BorderBrush="{DynamicResource MahApps.Brushes.Accent}"/>
     </Grid>
 </metro:Flyout>

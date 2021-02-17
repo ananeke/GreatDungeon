@@ -30,7 +30,7 @@
     <metro:MetroWindow.RightWindowCommands>
         <metro:WindowCommands ShowLastSeparator="True">
             <StackPanel Orientation="Horizontal">
-                <Button>
+                <Button Command="{Binding FlyoutToggleCommand}" CommandParameter="R">
                     <StackPanel Orientation="Horizontal">
                         <iconPacks:PackIconModern Kind="Settings"/>
                         <TextBlock Text="{lex:Loc Settings}" Margin="4 0 0 0" VerticalAlignment="Center"/>
